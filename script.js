@@ -132,3 +132,31 @@ window.addEventListener("scroll",()=>{
     });
 
 });
+
+emailjs.init("9QF9j-sJ8HgXwVVSF");
+
+const form = document.getElementById("contact-form");
+
+form.addEventListener("submit", function(e){
+
+    e.preventDefault();
+
+    emailjs.sendForm(
+        "service_g6v935l",
+        "template_0nwv5ld",
+        this
+    ).then(function(){
+
+        alert("Message Sent Successfully!");
+
+        form.reset();
+
+    }).catch(function(error){
+
+        alert("Failed to Send Message");
+
+        console.log(error);
+
+    });
+
+});
