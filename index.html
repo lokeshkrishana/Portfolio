@@ -160,9 +160,6 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
 
         <!-- Project 1 -->
         <div class="project-card">
-
-            <img src="images/attendance.png" alt="Attendance System">
-
             <h3>Geolocation Attendance System</h3>
 
             <p>
@@ -186,9 +183,6 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
         <!-- Project 2 -->
 
         <div class="project-card">
-
-            <img src="images/health.png" alt="Health Risk">
-
             <h3>Health Risk Analysis</h3>
 
             <p>
@@ -250,29 +244,39 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
 
         <!-- Contact Form -->
 
-        <form class="contact-form">
+       <form id="contact-form">
 
-            <input
-                type="text"
-                placeholder="Your Name"
-                required>
+<input
+type="text"
+name="from_name"
+placeholder="Your Name"
+required>
 
-            <input
-                type="email"
-                placeholder="Your Email"
-                required>
+<input
+type="email"
+name="from_email"
+placeholder="Your Email"
+required>
 
-            <textarea
-                rows="6"
-                placeholder="Your Message"
-                required>
-            </textarea>
+<input
+type="text"
+name="subject"
+placeholder="Subject"
+required>
 
-            <button type="submit">
-                Send Message
-            </button>
+<textarea
+name="message"
+rows="6"
+placeholder="Your Message"
+required></textarea>
 
-        </form>
+<button type="submit">
+
+Send Message
+
+</button>
+
+</form>
 
     </div>
 
@@ -286,7 +290,13 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
 </footer>
 
     <script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 
+<script>
+
+emailjs.init("9QF9j-sJ8HgXwVVSF");
+
+</script>
 </body>
 
 </html>
