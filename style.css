@@ -948,3 +948,9 @@ footer span{
     backdrop-filter:blur(10px);
 
 }
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
