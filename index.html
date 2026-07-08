@@ -207,90 +207,37 @@
 
     <div class="contact-container">
 
-        <!-- Contact Information -->
         <div class="contact-info">
-
-            <div class="info">
-                <i class="fas fa-envelope"></i>
-                <span>lokeshloke2411@gmail.com</span>
-            </div>
-
-            <div class="info">
-                <i class="fas fa-phone"></i>
-                <span>+91 93427 51606</span>
-            </div>
-
-            <div class="info">
-                <i class="fas fa-location-dot"></i>
-                <span>Chennai, India</span>
-            </div>
-
-            <div class="info">
-                <i class="fab fa-linkedin"></i>
-                <a href="https://www.linkedin.com/in/k-lokesh-601822256/" target="_blank">
-                    LinkedIn
-                </a>
-            </div>
-
-            <div class="info">
-                <i class="fab fa-github"></i>
-                <a href="https://github.com/lokeshkrishana" target="_blank">
-                    GitHub
-                </a>
-            </div>
-
+            ...
         </div>
 
-        <!-- Contact Form -->
+        <form id="contact-form" class="contact-form">
 
-       <form id="contact-form">
+            <input type="text" name="from_name" placeholder="Your Name" required>
 
-<input
-type="text"
-name="from_name"
-placeholder="Your Name"
-required>
+            <input type="email" name="from_email" placeholder="Your Email" required>
 
-<input
-type="email"
-name="from_email"
-placeholder="Your Email"
-required>
+            <input type="text" name="subject" placeholder="Subject" required>
 
-<input
-type="text"
-name="subject"
-placeholder="Subject"
-required>
+            <textarea
+                name="message"
+                rows="6"
+                placeholder="Your Message"
+                required></textarea>
 
-<textarea
-name="message"
-rows="6"
-placeholder="Your Message"
-required></textarea>
+            <button type="submit">Send Message</button>
 
-<button type="submit">
-
-Send Message
-
-</button>
-
-</form>
+        </form>
 
     </div>
 
 </section>
+
 <footer>
-
-    <p>
-        © 2026 Lokesh K. All Rights Reserved.
-    </p>
-
+    <p>© 2026 Lokesh K. All Rights Reserved.</p>
 </footer>
-<!-- EmailJS Library -->
-<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 
-<!-- Your JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 <script src="script.js"></script>
 
 </body>
